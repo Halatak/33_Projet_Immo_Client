@@ -1,13 +1,15 @@
-<nav class="navbar navbar-inverse">
+<nav class="navbar">
+   
   <ul class="nav nav-pills">
-<li role="presentaion"><a [routerLink]="['/home']" routerLinkActive="btn-danger">Accueil </a> </li>
-<li role="presentaion"><a [routerLink]="['/ajout']" routerLinkActive="btn-danger"> A louer </a></li>
-<li role="presentaion"><a [routerLink]="['/delete']" routerLinkActive="btn-danger"> A vendre </a></li>
-<li role="presentaion"><a [routerLink]="['/modif']" routerLinkActive="btn-danger"> Locaux commerciaux </a></li>
-<li role="presentaion"><a [routerLink]="['/find']" routerLinkActive="btn-danger"></a></li>
-<li role="presentaion"><input type="text" class="form-control" placeholder="Rechercher"></li>
-<li role="presentaion"><a [routerLink]="['/modif']" routerLinkActive="btn-danger"> Mon espace </a></li>
-
+    <li> <img width="60" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="></li>
+    <li style="padding-left: 50px" role="presentaion"><a [routerLink]="['/home']" routerLinkActive="btn-danger"><p class="texte">Accueil</p></a> </li>
+    <li role="presentaion"><a [routerLink]="['/ajout']" routerLinkActive="btn-danger"> <p class="texte">A louer</p> </a></li>
+    <li role="presentaion"><a [routerLink]="['/delete']" routerLinkActive="btn-danger"> <p class="texte">A vendre</p> </a></li>
+    <li role="presentaion"><a [routerLink]="['/modif']" routerLinkActive="btn-danger"> <p class="texte">Locaux commerciaux</p> </a></li>
+    <li role="presentaion"><a [routerLink]="['/find']" routerLinkActive="btn-danger"></a></li>
+    
+      <li style="padding-left: 500px" role="presentaion"><input type="text" class="form-control" placeholder="Rechercher"></li>
+      <li role="presentaion"><a [routerLink]="['/modif']" routerLinkActive="btn-danger"> <p class="texte">Mon espace</p> </a></li>
+    
   </ul>
-  
 </nav>
