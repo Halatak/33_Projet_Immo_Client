@@ -1,50 +1,41 @@
 <app-header></app-header>
-<!--The content below is only a placeholder and can be replaced.-->
-<div id="homepage-video-block" style="order: 1" class="block hero dark">
-  <div class="homepage-video-block-wrapper">
-
-
-    <div id="headline-items" class="container align-center">
-      <div id="items" style="" class="fadeIn">
-        <div class="item show" style="display: none;">
-          <h5>Welcome to</h5>
-          <h1>Jade Mills</h1>
-        </div>
-        <div class="item" style="display: none;">
-          <h5>Extraordinary Luxury</h5>
-          <h1>Homes</h1>
-        </div>
-        <div class="item" style="display: none;">
-          <h5>Member of</h5>
-          <h1>Luxury Presence</h1>
-        </div>
-        <div class="item" style="display: none;">
-          <h5>Unparalleled Global</h5>
-          <h1>Marketing</h1>
-        </div>
-        <div class="item" style="display: none;">
-          <h5>World-Class</h5>
-          <h1>Service</h1>
-        </div>
-        <div class="item" style="display: none;">
-          <h5>The #1 Beverly Hills</h5>
-          <h1>Realtor</h1>
-        </div>
-      </div>
-      <p id="headline-lead" style="" class="lead fadeInUp">Coldwell Banker Residential Brokerage</p><a
-        id="header-button" href="/properties/sale" role="button" style="" class="btn btn-outline btn-lg fadeInUp">Search
-        All Homes</a>
-    </div>
 
 
 
-    <video style="width: 100vw; height: 100vw; position: absolute; margin-top:-357px;" id="bgvid" autoplay="autoplay"
-      preload="metadata" loop="loop" muted="" class="playing">
-      <source src="//luxuryp.s3.amazonaws.com/ecd307c1d17f6c44dd6779a538a6779d.m4v" type="video/mp4"></video>
-
-
-  </div>
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide><video style="height: 40vw; " id="bgvid" autoplay="autoplay" preload="metadata"
+        loop="loop" muted="" class="playing">
+        <source
+          src="\assets\Les produits ménagers faits maison seraient moins nocifs pour la santé.mp4"
+          type="video/mp4"></video>
+    </ng-template>
+    <ng-template carouselSlide><video style="height: 40vw; " id="bgvid" autoplay="playing" preload="metadata"
+        loop="loop" muted="" class="playing">
+        <source src="//luxuryp.s3.amazonaws.com/ecd307c1d17f6c44dd6779a538a6779d.m4v" type="video/mp4"></video>
+    </ng-template>
+    <ng-template carouselSlide><video style="height: 40vw; " id="bgvid" autoplay="autoplay" preload="metadata"
+        loop="loop" muted="" class="playing">
+        <source src="//luxuryp.s3.amazonaws.com/ecd307c1d17f6c44dd6779a538a6779d.m4v" type="video/mp4"></video>
+    </ng-template>
+    <ng-template carouselSlide><video style="height: 40vw; " id="bgvid" autoplay="autoplay" preload="metadata"
+        loop="loop" muted="" class="playing">
+        <source src="//luxuryp.s3.amazonaws.com/ecd307c1d17f6c44dd6779a538a6779d.m4v" type="video/mp4"></video>
+    </ng-template>
+    <ng-template carouselSlide><video style="height: 40vw; " id="bgvid" autoplay="autoplay" preload="metadata"
+        loop="loop" muted="" class="playing">
+        <source src="//luxuryp.s3.amazonaws.com/ecd307c1d17f6c44dd6779a538a6779d.m4v" type="video/mp4"></video>
+    </ng-template>
+  </owl-carousel-o>
 </div>
 
-  <!-- <app-footer></app-footer> -->
-  <router-outlet></router-outlet>
+
+
+
+
+
+<!-- <app-footer></app-footer> -->
+<router-outlet></router-outlet>

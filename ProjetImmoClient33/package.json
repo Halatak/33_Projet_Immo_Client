@@ -21,6 +21,10 @@
     "@angular/router": "~7.2.0",
     "bootstrap": "^3.3.7",
     "core-js": "^2.5.4",
+    "ng2-youtube-player": "0.0.31",
+    "ngx-embed-video": "^1.0.4",
+    "ngx-owl-carousel-o": "^1.1.1",
+    "ngx-youtube-player": "^7.1.1",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
