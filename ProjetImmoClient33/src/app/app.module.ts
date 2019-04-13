@@ -17,6 +17,8 @@ import { ModifLocationComponent } from './modif-location/modif-location.componen
 import { SupprBienComponent } from './suppr-bien/suppr-bien.component';
 import { AccueilBienImmobilierComponent } from './accueil-bien-immobilier/accueil-bien-immobilier.component';
 import { RechercheBienImmobilierComponent } from './recherche-bien-immobilier/recherche-bien-immobilier.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -37,6 +39,9 @@ import { RechercheBienImmobilierComponent } from './recherche-bien-immobilier/re
     AppRoutingModule,
     CarouselModule,
     BrowserAnimationsModule,
+    HttpClientModule,
+    FormsModule, 
+    ReactiveFormsModule,
      RouterModule.forRoot([])
      
   ],
