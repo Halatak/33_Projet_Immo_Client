@@ -1,15 +1,11 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-
-
+  selector: 'app-accueil',
+  templateUrl: './accueil.component.html',
+  styleUrls: ['./accueil.component.css']
 })
-export class AppComponent {
-  title = 'ProjetImmoClient33';
+export class AccueilComponent implements OnInit {
   customOptions: any = {
     loop: true,
     mouseDrag: false,
@@ -34,5 +30,11 @@ export class AppComponent {
     },
     nav: true
   }
-}
 
+  constructor() { }
+ 
+  ngOnInit() {
+    
+  }
+
+}

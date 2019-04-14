@@ -1,3 +1,15 @@
-<p>
-  accueil-bien-immobilier works!
-</p>
+<h1 style="color:mediumturquoise; text-align:center">Liste des biens immo</h1>
+
+<div class="col-md-2"></div>
+<div class="col-md-8">
+<table class="table table-bordered table-hover">
+  <th>ID</th>
+  <th>Revenu</th>
+  <th>Prix</th>
+    <tr *ngFor="let b of listeBienImmo">
+      <td>{{b.id}}</td>
+      <td>{{b.revenu}}</td>
+      <td>{{b.prix}}</td>
+    </tr>
+</table>
+</div>

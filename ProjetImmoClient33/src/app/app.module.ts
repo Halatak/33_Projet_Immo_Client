@@ -19,6 +19,7 @@ import { AccueilBienImmobilierComponent } from './accueil-bien-immobilier/accuei
 import { RechercheBienImmobilierComponent } from './recherche-bien-immobilier/recherche-bien-immobilier.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { AccueilComponent } from './accueil/accueil.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { HttpClientModule } from '@angular/common/http';
     ModifLocationComponent,
     SupprBienComponent,
     AccueilBienImmobilierComponent,
-    RechercheBienImmobilierComponent
+    RechercheBienImmobilierComponent,
+    AccueilComponent
   ],
   imports: [
     BrowserModule,

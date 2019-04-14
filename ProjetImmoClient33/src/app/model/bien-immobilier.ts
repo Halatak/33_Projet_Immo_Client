@@ -8,23 +8,23 @@ import { Photo } from './photo';
 export class BienImmobilier {
 
   // Attributs de la classe mère
-  private _id: number;
-  private _statut: string;
-  private _dateSoumission: Date;
-  private _dateDispo: Date;
-  private _revenu: number;
-  private _coordonneePersAgence: string;
-  private _nbChambre: number;
-  private _latitude: string;
-  private _longitude: string;
+  public _id: number;
+  public _statut: string;
+  public _dateSoumission: Date;
+  public _dateDispo: Date;
+  public _revenu: number;
+  public _coordonneePersAgence: string;
+  public _nombreChambres: number;
+  public _latitude: string;
+  public _longitude: string;
 
   // Associations
-  private _adresse: Adresse;
-  private _classeStandard: ClasseStandard;
-  private _proprietaire: Proprietaire;
-  private _client: Client[];
-  private _visite: Visite;
-  private _photo: Photo[];
+  public _adresse: Adresse;
+  public _classeStandard: ClasseStandard;
+  public _proprietaire: Proprietaire;
+  public _client: Client[];
+  public _visite: Visite;
+  public _photo: Photo[];
 
   // Constructeur
   constructor() {}
@@ -72,11 +72,11 @@ export class BienImmobilier {
     this._coordonneePersAgence = newCoordonneePersAgence;
   }
 
-  get nbChambre(): number {
-    return this._nbChambre;
+  get nombreChambres(): number {
+    return this._nombreChambres;
   }
-  set nbChambre(newNbChambre: number) {
-    this._nbChambre = newNbChambre;
+  set nombreChambres(newNombreChambres: number) {
+    this._nombreChambres = newNombreChambres;
   }
 
   get latitude(): string {

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BienImmobilierService } from '../service/bien-immobilier.service';
 
 @Component({
   selector: 'app-accueil-bien-immobilier',
@@ -7,9 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccueilBienImmobilierComponent implements OnInit {
 
-  constructor() { }
+    // Déclarer des attributs du composants
+    listeBienImmo: any; 
+
+  constructor(private bService: BienImmobilierService) { }
 
   ngOnInit() {
+    this.bService.getAllBien().subscribe((data) => {
+      this.listeBienImmo = data;
+    },
+      (erreur) => {
+        console.log(erreur);
+      }
+      );
   }
+
+  public deleteLien(idb:number){
+    this.bService.supprBienImmobilier(idb).subscribe((result) => {
+      this.listeBienImmo = this.listeBienImmo.filter(b => b.id != idb);
+    });
+  }
+
 
 }
