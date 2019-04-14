@@ -39,4 +39,9 @@ export class Adresse {
     this._ville = newVille;
   }
 
+  // ToString
+  public toString = (): string => {
+    return `${this._numero} ${this._rue} ${this._codePostal} ${this._ville}`;
+  }
+
 }
