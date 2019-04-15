@@ -8,10 +8,12 @@ import { ModifLocationComponent } from './modif-location/modif-location.componen
 import { SupprBienComponent } from './suppr-bien/suppr-bien.component';
 import { RechercheBienImmobilierComponent } from './recherche-bien-immobilier/recherche-bien-immobilier.component';
 import { AccueilComponent } from './accueil/accueil.component';
+import { AccueilConseillerComponent } from './accueil-conseiller/accueil-conseiller.component';
 
 const routes: Routes = [ 
 {path:'', redirectTo:'home', pathMatch:'full'},
 {path:'home', component:AccueilComponent},
+{path:'accConseiller', component:AccueilConseillerComponent},
 {path:'accBienImmo', component:AccueilBienImmobilierComponent},
 {path:'addAchat', component:AjoutAchatComponent},
 {path:'addLocation', component:AjoutLocationComponent},
