@@ -10,25 +10,26 @@ import { RechercheBienImmobilierComponent } from './recherche-bien-immobilier/re
 import { AccueilComponent } from './accueil/accueil.component';
 import { AccueilConseillerComponent } from './accueil-conseiller/accueil-conseiller.component';
 import { AjoutClientComponent } from './ajout-client/ajout-client.component';
+import { AccueilLocationComponent } from './accueil-location/accueil-location.component';
 
-const routes: Routes = [ 
-{path:'', redirectTo:'home', pathMatch:'full'},
-{path:'home', component:AccueilComponent},
-{path:'accConseiller', component:AccueilConseillerComponent},
-{path:'accBienImmo', component:AccueilBienImmobilierComponent},
-{path:'addAchat', component:AjoutAchatComponent},
-{path:'addLocation', component:AjoutLocationComponent},
-{path:'updateAchat', component:ModifAchatComponent},
-{path:'updateLocation', component:ModifLocationComponent},
-{path:'deleteBienImmo', component:SupprBienComponent},
-{path:'findBienImmo', component:RechercheBienImmobilierComponent},
-{path:'addClient', component:AjoutClientComponent},
+const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: AccueilComponent },
+  { path: 'accConseiller', component: AccueilConseillerComponent },
+  { path: 'accBienImmo', component: AccueilBienImmobilierComponent },
+  { path: 'addAchat', component: AjoutAchatComponent },
+  { path: 'addLocation', component: AjoutLocationComponent },
+  { path: 'updateAchat', component: ModifAchatComponent },
+  { path: 'updateLocation', component: ModifLocationComponent },
+  { path: 'deleteBienImmo', component: SupprBienComponent },
+  { path: 'findBienImmo', component: RechercheBienImmobilierComponent },
+  { path: 'addClient', component: AjoutClientComponent },
+  { path: 'accLocation', component: AccueilLocationComponent },
 
-{path:'**', redirectTo:'home', pathMatch:'full'}];
+  { path: '**', redirectTo: 'home', pathMatch: 'full' }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
- 
