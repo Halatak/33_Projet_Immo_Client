@@ -1,3 +1,111 @@
-<p>
-  accueil-conseiller works!
-</p>
+<div class="col-md-2"></div>
+<div class="col-md-8">
+
+  <h1 style="color:mediumturquoise; text-align:center">Liste des Clients</h1>
+  <table class="table table-bordered table-hover">
+    <tr>
+      <th>ID</th>
+      <th>Nom</th>
+      <th>Mail</th>
+      <th>Téléphone</th>
+      <th>Adresse</th>
+    </tr>
+    <tr *ngFor="let cl of listeClient">
+      <td>{{cl.id}}</td>
+      <td>{{cl.nom}}</td>
+      <td>{{cl.mail}}</td>
+      <td>{{cl.telephone}}</td>
+      <td>{{cl.adresse.numero}} {{cl.adresse.rue}} {{cl.adresse.codePostal}} {{cl.adresse.ville}}</td>
+    </tr>
+  </table>
+
+  <h1 style="color:mediumturquoise; text-align:center">Liste des Biens Immobiliers</h1>
+
+  <table class="table table-bordered table-hover">
+    <tr>
+      <th>ID</th>
+      <th>Statut</th>
+      <th>Date de soumission</th>
+      <th>Date de mise à disposition</th>
+      <th>Nombre de chambres</th>
+      <th>Revenu cadastral (&#8364;)</th>
+      <th>Prix (&#8364;)</th>
+      <th>Caution (&#8364;)</th>
+      <th>Loyer mensuel (&#8364;)</th>
+      <th>Liste des clients</th>
+      <th>Addresse</th>
+    </tr>
+    <tr *ngFor="let b of listeBienImmo">
+      <td>{{b.id}}</td>
+      <td>{{b.statut}}</td>
+      <td>{{b.dateSoumission}}</td>
+      <td>{{b.dateDispo}}</td>
+      <td>{{b.nombreChambres}}</td>
+      <td>{{b.revenu}}</td>
+      <td>{{b.prix}}</td>
+      <td>{{b.caution}}</td>
+      <td>{{b.loyerMensuel}}</td>
+      <td>{{b.clients}}</td>
+      <td>{{b.adresse.numero}} {{b.adresse.rue}} {{b.adresse.codePostal}} {{b.adresse.ville}}</td>
+    </tr>
+  </table>
+
+  <h1 style="color:mediumturquoise; text-align:center">Liste des Classes Standards</h1>
+  <table class="table table-bordered table-hover">
+    <tr>
+      <th>ID</th>
+      <th>Type de bien</th>
+      <th>Mode de l'offre</th>
+      <th>Prix Max. (&#8364;)</th>
+      <th>Superficie Min. (&#13217;)</th>
+    </tr>
+    <tr *ngFor="let cs of listeClasseStandard">
+      <td>{{cs.id}}</td>
+      <td>{{cs.typeBien}}</td>
+      <td>{{cs.modeOffre}}</td>
+      <td>{{cs.prixMax}}</td>
+      <td>{{cs.superficieMin}}</td>
+    </tr>
+  </table>
+
+  <h1 style="color:mediumturquoise; text-align:center">Liste des Contrats</h1>
+  <table class="table table-bordered table-hover">
+    <tr>
+      <th>ID</th>
+      <th>Prix d'achat</th>
+      <th>Date d'achat</th>
+      <th>Propriétaire</th>
+      <th>Client</th>
+    </tr>
+    <tr *ngFor="let c of listeContrat">
+      <td>{{c.id}}</td>
+      <td>{{c.prixAchat}}</td>
+      <td>{{c.dateAchat}}</td>
+      <td>{{c.proprietaire}}</td>
+      <td>{{c.client}}</td>
+    </tr>
+  </table>
+
+  <h1 style="color:mediumturquoise; text-align:center">Liste des Visites</h1>
+  <table class="table table-bordered table-hover">
+    <tr>
+      <th>ID</th>
+      <th>Date de visite</th>
+      <th>Heure de visite</th>
+      <th>Client</th>
+      <th>Conseiller</th>
+      <th>Bien immobilier</th>
+    </tr>
+    <tr *ngFor="let v of listeVisite">
+      <td>{{v.id}}</td>
+      <td>{{v.dateVisite}}</td>
+      <td>{{v.heureVisite}}</td>
+      <td>{{v.client}}</td>
+      <td>{{v.conseiller}}</td>
+      <td>{{v.bienImmobilier}}</td>
+    </tr>
+  </table>
+
+
+
+</div>

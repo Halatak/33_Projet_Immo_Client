@@ -21,8 +21,8 @@ export class AccueilConseillerComponent implements OnInit {
   listeVisite: any;
 
   constructor(private clService: ClientService, private biService: BienImmobilierService,
-    private csService: ClasseStandardService, private cService: ContratService,
-    private vService: VisiteService) { }
+              private csService: ClasseStandardService, private cService: ContratService,
+              private vService: VisiteService) { }
 
   ngOnInit() {
     this.clService.getAllClient().subscribe((dataCl) => {
@@ -47,7 +47,53 @@ export class AccueilConseillerComponent implements OnInit {
       (erreur) => {
         console.log(erreur);
       }
-      );
+    );
+
+    this.cService.getAllContrat().subscribe((dataC) => {
+      this.listeContrat = dataC;
+    },
+      (erreur) => {
+        console.log(erreur);
+      }
+    );
+
+    this.vService.getAllVisite().subscribe((dataVi) => {
+      this.listeVisite = dataVi;
+    },
+      (erreur) => {
+        console.log(erreur);
+      }
+    );
+
   }
 
+  public deleteLienClient(idCl: number) {
+    this.clService.supprClient(idCl).subscribe((result) => {
+      this.listeClient = this.listeClient.filter(b => b.id !== idCl);
+    });
+  }
+
+  public deleteLienBienImmo(idBi: number) {
+    this.biService.supprBienImmobilier(idBi).subscribe((result) => {
+      this.listeBienImmo = this.listeBienImmo.filter(b => b.id !== idBi);
+    });
+  }
+
+  public deleteLienClasseStandard(idCs: number) {
+    this.csService.supprClasseStandard(idCs).subscribe((result) => {
+      this.listeClasseStandard = this.listeClasseStandard.filter(b => b.id !== idCs);
+    });
+  }
+
+  public deleteLienContrat(idCont: number) {
+    this.cService.supprContrat(idCont).subscribe((result) => {
+      this.listeContrat = this.listeContrat.filter(b => b.id !== idCont);
+    });
+  }
+
+  public deleteLienVisite(idV: number) {
+    this.vService.supprVisite(idV).subscribe((result) => {
+      this.listeVisite = this.listeVisite.filter(b => b.id !== idV);
+    });
+  }
 }
