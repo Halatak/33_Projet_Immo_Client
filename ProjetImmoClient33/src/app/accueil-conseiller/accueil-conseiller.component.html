@@ -1,5 +1,5 @@
 <div class="col-md-2"></div>
-<div class="col-md-8">
+<div class="offset-md-1 col-md-10">
 
   <h1 style="color:mediumturquoise; text-align:center">Liste des Clients</h1>
   <table class="table table-bordered table-hover">
@@ -9,6 +9,7 @@
       <th>Mail</th>
       <th>Téléphone</th>
       <th>Adresse</th>
+      <th>Opérations</th>
     </tr>
     <tr *ngFor="let cl of listeClient">
       <td>{{cl.id}}</td>
@@ -16,6 +17,8 @@
       <td>{{cl.mail}}</td>
       <td>{{cl.telephone}}</td>
       <td>{{cl.adresse.numero}} {{cl.adresse.rue}} {{cl.adresse.codePostal}} {{cl.adresse.ville}}</td>
+      <td><a class="btn btn-primary" [routerLink]="['/modif', {pId:cl.id}]" >Modifier</a> |
+        <button class="btn btn-danger" (click)="deleteLienClient(cl.id)">Supprimer</button></td>
     </tr>
   </table>
 
@@ -34,6 +37,7 @@
       <th>Loyer mensuel (&#8364;)</th>
       <th>Liste des clients</th>
       <th>Addresse</th>
+      <th>Opérations</th>
     </tr>
     <tr *ngFor="let b of listeBienImmo">
       <td>{{b.id}}</td>
@@ -47,6 +51,8 @@
       <td>{{b.loyerMensuel}}</td>
       <td>{{b.clients}}</td>
       <td>{{b.adresse.numero}} {{b.adresse.rue}} {{b.adresse.codePostal}} {{b.adresse.ville}}</td>
+      <td><a class="btn btn-primary" [routerLink]="['/modif', {pId:b.id}]" >Modifier</a> |
+        <button class="btn btn-danger" (click)="deleteLienBienImmo(b.id)">Supprimer</button></td>
     </tr>
   </table>
 
@@ -58,6 +64,7 @@
       <th>Mode de l'offre</th>
       <th>Prix Max. (&#8364;)</th>
       <th>Superficie Min. (&#13217;)</th>
+      <th>Opérations</th>
     </tr>
     <tr *ngFor="let cs of listeClasseStandard">
       <td>{{cs.id}}</td>
@@ -65,6 +72,8 @@
       <td>{{cs.modeOffre}}</td>
       <td>{{cs.prixMax}}</td>
       <td>{{cs.superficieMin}}</td>
+      <td><a class="btn btn-primary" [routerLink]="['/modif', {pId:cs.id}]" >Modifier</a> |
+        <button class="btn btn-danger" (click)="deleteLienClasseStandard(cs.id)">Supprimer</button></td>
     </tr>
   </table>
 
@@ -76,6 +85,7 @@
       <th>Date d'achat</th>
       <th>Propriétaire</th>
       <th>Client</th>
+      <th>Opérations</th>
     </tr>
     <tr *ngFor="let c of listeContrat">
       <td>{{c.id}}</td>
@@ -83,6 +93,8 @@
       <td>{{c.dateAchat}}</td>
       <td>{{c.proprietaire}}</td>
       <td>{{c.client}}</td>
+      <td><a class="btn btn-primary" [routerLink]="['/modif', {pId:c.id}]" >Modifier</a> |
+        <button class="btn btn-danger" (click)="deleteLienContrat(c.id)">Supprimer</button></td>
     </tr>
   </table>
 
@@ -95,6 +107,7 @@
       <th>Client</th>
       <th>Conseiller</th>
       <th>Bien immobilier</th>
+      <th>Opérations</th>
     </tr>
     <tr *ngFor="let v of listeVisite">
       <td>{{v.id}}</td>
@@ -103,6 +116,8 @@
       <td>{{v.client}}</td>
       <td>{{v.conseiller}}</td>
       <td>{{v.bienImmobilier}}</td>
+      <td><a class="btn btn-primary" [routerLink]="['/modif', {pId:v.id}]" >Modifier</a> |
+        <button class="btn btn-danger" (click)="deleteLienVisite(v.id)">Supprimer</button></td>
     </tr>
   </table>
 
