@@ -1,0 +1,29 @@
+<h1 style="color:mediumturquoise; text-align: center">
+  Formulaire d'ajout bien achat
+</h1>
+
+<form (submit)='ajoutBienAchat()' class="form-horizontal">
+  <div class="form-group">
+     <label for="idRevenu" class="col-sm-2 control-label">Revenu</label>
+     <div class="col-sm-5">
+        <input type="text" class="form-control" id="idRevenu" placeholder="Revenu" name="fRevenu" [(ngModel)]="baAjout.revenu">
+     </div>
+  </div>
+
+  <div class="form-group">
+     <label for="idPrenom" class="col-sm-2 control-label">nb Chambre</label>
+     <div class="col-sm-5">
+        <input type="text" class="form-control" id="idPrenom" placeholder="Prenom" name="fPrenom" [(ngModel)]="baAjout.nbChambre">
+     </div>
+  </div>
+
+ <div class="form-group">
+   <div class="col-sm-offset-2 col-sm-10">
+     <button type="submit" class="btn btn-default">Ajouter</button>
+   </div>
+ </div>
+</form>
+
+<h1 style="color:mediumturquoise; text-align: center" *ngIf="indice">
+    L'ajout a échoué
+  </h1>
