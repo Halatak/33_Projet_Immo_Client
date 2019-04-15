@@ -4,6 +4,7 @@ import { BienImmobilier } from '../model/bien-immobilier';
 import { BienImmobilierAchat } from '../model/bien-immobilier-achat';
 import { BienImmobilierService } from '../service/bien-immobilier.service';
 import { Router } from '@angular/router';
+import { Adresse } from '../model/adresse';
 
 @Component({
   selector: 'app-ajout-achat',
@@ -15,6 +16,7 @@ export class AjoutAchatComponent implements OnInit {
    //Les attributs du composant 
    monForm: FormGroup;
   baAjout:BienImmobilierAchat= new BienImmobilierAchat();
+  adresse:Adresse = new Adresse();
  
    indice:boolean=false;
 
@@ -24,6 +26,7 @@ export class AjoutAchatComponent implements OnInit {
   }
 
   ajoutBienAchat(){
+    this.adresse = this.baAjout.adresse;
     this.bService.ajoutBienAchat(this.baAjout).subscribe((resultat) => {
       let baTemp:BienImmobilierAchat = resultat;
     if(baTemp.id!=0){

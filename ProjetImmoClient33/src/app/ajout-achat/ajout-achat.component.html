@@ -6,16 +6,38 @@
   <div class="form-group">
      <label for="idRevenu" class="col-sm-2 control-label">Revenu</label>
      <div class="col-sm-5">
-        <input type="text" class="form-control" id="idRevenu" placeholder="Revenu" name="fRevenu" [(ngModel)]="baAjout.revenu">
+        <input type="number" class="form-control" id="idRevenu" placeholder="Revenu" name="fRevenu" [(ngModel)]="baAjout.revenu">
      </div>
   </div>
 
   <div class="form-group">
-     <label for="idPrenom" class="col-sm-2 control-label">nb Chambre</label>
+     <label for="idNombreChambres" class="col-sm-2 control-label">nombreChambres</label>
      <div class="col-sm-5">
-        <input type="text" class="form-control" id="idPrenom" placeholder="Prenom" name="fPrenom" [(ngModel)]="baAjout.nbChambre">
+        <input type="number" class="form-control" id="idNombreChambres" placeholder="NombreChambres" name="fNombreChambres" [(ngModel)]="baAjout.nombreChambres">
      </div>
   </div>
+
+ <div class="form-group">
+  <label for="idNumero" class="col-sm-2 control-label">Numero</label>
+  <div class="col-sm-5">
+     <input type="number" class="form-control" id="idNumero" placeholder="Numero" name="fNumero" [(ngModel)]="baAjout.adresse.numero">
+  </div>
+</div>
+
+<div class="form-group">
+  <label for="idPrix" class="col-sm-2 control-label">Prix</label>
+  <div class="col-sm-5">
+     <input type="number" class="form-control" id="idPrix" placeholder="Prix" name="fPrix" [(ngModel)]="baAjout.prix">
+  </div>
+</div>
+
+
+<div class="form-group">
+  <label for="idCodePostal" class="col-sm-2 control-label">CodePostal</label>
+  <div class="col-sm-5">
+     <input type="number" class="form-control" id="idCodePostal" placeholder="CodePostal" name="fCodePostal" [(ngModel)]="baAjout.adresse.codePostal">
+  </div>
+</div>
 
  <div class="form-group">
    <div class="col-sm-offset-2 col-sm-10">
