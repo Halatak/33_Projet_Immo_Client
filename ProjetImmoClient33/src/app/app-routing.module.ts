@@ -9,6 +9,7 @@ import { SupprBienComponent } from './suppr-bien/suppr-bien.component';
 import { RechercheBienImmobilierComponent } from './recherche-bien-immobilier/recherche-bien-immobilier.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { AccueilConseillerComponent } from './accueil-conseiller/accueil-conseiller.component';
+import { AjoutClientComponent } from './ajout-client/ajout-client.component';
 
 const routes: Routes = [ 
 {path:'', redirectTo:'home', pathMatch:'full'},
@@ -21,6 +22,7 @@ const routes: Routes = [
 {path:'updateLocation', component:ModifLocationComponent},
 {path:'deleteBienImmo', component:SupprBienComponent},
 {path:'findBienImmo', component:RechercheBienImmobilierComponent},
+{path:'addClient', component:AjoutClientComponent},
 
 {path:'**', redirectTo:'home', pathMatch:'full'}];
 

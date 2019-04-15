@@ -1,3 +1,66 @@
-<p>
-  ajout-client works!
-</p>
+<h1 style="color:blue; text-align: center">Formulaire d'ajout de client</h1>
+<br />
+<form class="form-horizontal" (submit)="ajouter()">
+  <div class="form-group">
+    <label for="idNom" class="col-sm-2 control-label">Nom</label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control" id="idNom" placeholder="Nom ..." name="fNom" [(ngModel)]="cAjout.nom">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="idMail" class="col-sm-2 control-label">Mail</label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control" id="idMail" placeholder="Adresse mail ..." name="fMail"
+        [(ngModel)]="cAjout.mail">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="idMdp" class="col-sm-2 control-label">Mot de passe</label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control" id="idMdp" placeholder="Mot de passe ..." name="fMdp"
+        [(ngModel)]="cAjout.mdp">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="idTelephone" class="col-sm-2 control-label">N° Téléphone</label>
+    <div class="col-sm-5">
+      <input type="number" class="form-control" id="idTelephone" placeholder="N° Telephone ..." name="fTelephone"
+        [(ngModel)]="cAjout.telephone">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="idNumero" class="col-sm-2 control-label">Numero de voie</label>
+    <div class="col-sm-5">
+      <input type="number" class="form-control" id="idNumero" placeholder="N° voie ..." name="fAdresseNumero"
+        [(ngModel)]="adrAjout.numero">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="idRue" class="col-sm-2 control-label">Rue</label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control" id="idRue" placeholder="Rue ..." name="fAdresseRue"
+        [(ngModel)]="adrAjout.rue">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="idCodePostal" class="col-sm-2 control-label">Code Postal</label>
+    <div class="col-sm-5">
+      <input type="number" class="form-control" id="idCodePostal" placeholder="Code Postal ..." name="fAdresseCodePostal"
+        [(ngModel)]="adrAjout.codePostal">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="idVille" class="col-sm-2 control-label">Ville</label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control" id="idVille" placeholder="Ville ..." name="fAdresseVille"
+        [(ngModel)]="adrAjout.ville">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Ajouter</button>
+    </div>
+  </div>
+</form>
+
+<h3 style="color:red; text-align: center" *ngIf="indice">L'ajout a échoué ...</h3>
