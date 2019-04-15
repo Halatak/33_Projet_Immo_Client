@@ -26,6 +26,7 @@ import { AccueilConseillerComponent } from './accueil-conseiller/accueil-conseil
 import { AjoutClientComponent } from './ajout-client/ajout-client.component';
 import { AjoutClasseStandardComponent } from './ajout-classe-standard/ajout-classe-standard.component';
 import { ResaVisiteComponent } from './resa-visite/resa-visite.component';
+import { AccueilLocationComponent } from './accueil-location/accueil-location.component';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { ResaVisiteComponent } from './resa-visite/resa-visite.component';
     AccueilConseillerComponent,
     AjoutClientComponent,
     AjoutClasseStandardComponent,
-    ResaVisiteComponent
+    ResaVisiteComponent,
+    AccueilLocationComponent,
   ],
   imports: [
     BrowserModule,
