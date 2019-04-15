@@ -1,74 +1,102 @@
-
-
 <div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  
+
+
   <owl-carousel-o [options]="customOptions">
 
-    <ng-template carouselSlide><video  style="height: 40vw" id="bgvid" autoplay="autoplay" preload="metadata"
-        loop="loop" muted="1" class="playing" >
-        <source
-          src="\assets\video1.mp4"
-          type="video/mp4"></video>
+    <ng-template carouselSlide><video style="height: 40vw" id="bgvid" autoplay="autoplay" preload="metadata" loop="loop"
+        muted="1" class="playing">
+        <source src="\assets\video1.mp4" type="video/mp4"></video>
+      <h1 class="texte">Charmant hôtel particulier dans le coeur de la vieille ville, proche commerces et écoles.<br/>
+        Surface : 240m² sur 3 étages.</h1>
+        <a href="">Voir plus</a>
     </ng-template>
 
     <ng-template carouselSlide><video style="height: 40vw; " id="bgvid" autoplay="playing" preload="metadata"
         loop="loop" muted="" class="playing">
         <source src="\assets\v2_AgenceJaneBellemaisoncontemporaineprocheBordeaux.mp4" type="video/mp4"></video>
+          <h1 class="texte">Maison spacieuse à Talence, idéale pour vivre en famille.<br/>
+            Surface intérieur : 180m² sur 2 étages. Surface extérieur : 300m²</h1>
+            <a href="">Voir plus</a>
     </ng-template>
 
     <ng-template carouselSlide><video style="height: 40vw; " id="bgvid" autoplay="autoplay" preload="metadata"
         loop="loop" muted="" class="playing">
         <source src="\assets\v3_AgenceJaneLocationChteauMargaux.mp4" type="video/mp4"></video>
+          <h1 class="texte">Château viticole proche de Bordeaux. Domaine + Propriété (avec piscine).<br/>
+            Surface : 360m² sur 3 étages.</h1>
+            <a href="">Voir plus</a>
     </ng-template>
 
     <ng-template carouselSlide><video style="height: 40vw; " id="bgvid" autoplay="autoplay" preload="metadata"
         loop="loop" muted="" class="playing">
         <source src="\assets\v4_AgenceJaneMagnifiquevillaauCapFerret.mp4" type="video/mp4"></video>
+          <h1 class="texte">Magnifique villa au Cap Ferret, aux 44 hectares. Maison en bois au milieu des pins.<br/>
+            Surface : 145m².</h1>
+            <a href="">Voir plus</a>
     </ng-template>
 
     <ng-template carouselSlide><video style="height: 40vw; " id="bgvid" autoplay="autoplay" preload="metadata"
         loop="loop" muted="" class="playing">
         <source src="\assets\v5_AgenceJanePropritdecampagneprocheBordeaux.mp4" type="video/mp4"></video>
+          <h1 class="texte">Maison secondaire idéale proche de Bordeaux. Jardin avec piscine. Accès possible à la Dordogne.<br/>
+            Surface intérieur : 210m² sur 2 étages. Surface extérieur : 450m².</h1>
+            <a href="">Voir plus</a>
     </ng-template>
 
     <ng-template carouselSlide><video style="height: 40vw; " id="bgvid" autoplay="autoplay" preload="metadata"
-      loop="loop" muted="" class="playing">
-      <source src="\assets\v6_PropritviticoleprocheBordeauxJaneLuxuryRealEstate.mp4" type="video/mp4"></video>
-  </ng-template>
+        loop="loop" muted="" class="playing">
+        <source src="\assets\v6_PropritviticoleprocheBordeauxJaneLuxuryRealEstate.mp4" type="video/mp4"></video>
+          <h1 class="texte">Charmante propriété viticole, proche de Bordeaux.<br/>
+            Surface intérieur : 410m² sur 4 étages. Surface extérieur : 57ha.</h1>
+            <a href="">Voir plus</a>
+    </ng-template>
 
-  <ng-template carouselSlide><video style="height: 40vw; " id="bgvid" autoplay="autoplay" preload="metadata"
-    loop="loop" muted="" class="playing">
-    <source src="\assets\v7_AgencejaneVillafrontdemerPyla.mp4" type="video/mp4"></video>
-</ng-template>
+    <ng-template carouselSlide><video style="height: 40vw; " id="bgvid" autoplay="autoplay" preload="metadata"
+        loop="loop" muted="" class="playing">
+        <source src="\assets\v7_AgencejaneVillafrontdemerPyla.mp4" type="video/mp4"></video>
+          <h1 class="texte">Très jolie maison à Pyla-sur-Mer. Accès privatif au Bassin d'Arcachon.<br/>
+            Surface intérieur : 162m² sur 2 étages.</h1>
+            <a href="">Voir plus</a>
+    </ng-template>
 
-<ng-template carouselSlide><video style="height: 40vw; " id="bgvid" autoplay="autoplay" preload="metadata"
-  loop="loop" muted="" class="playing">
-  <source src="\assets\v8_AgenceJaneVillacontemporainePessac.mp4" type="video/mp4"></video>
-</ng-template>
+    <ng-template carouselSlide><video style="height: 40vw; " id="bgvid" autoplay="autoplay" preload="metadata"
+        loop="loop" muted="" class="playing">
+        <source src="\assets\v8_AgenceJaneVillacontemporainePessac.mp4" type="video/mp4"></video>
+          <h1 class="texte">Magnifique Villa à Pessac, au milieu des vignobles.<br/>
+            Surface intérieur : 302m². Surface extérieur : 80m² avec piscine.</h1>
+            <a href="">Voir plus</a>
+    </ng-template>
 
-<ng-template carouselSlide><video style="height: 40vw; " id="bgvid" autoplay="autoplay" preload="metadata"
-  loop="loop" muted="" class="playing">
-  <source src="\assets\v9_AgenceJaneSuperbevillaprsplagesauCapFerret.mp4" type="video/mp4"></video>
-</ng-template>
+    <ng-template carouselSlide><video style="height: 40vw; " id="bgvid" autoplay="autoplay" preload="metadata"
+        loop="loop" muted="" class="playing">
+        <source src="\assets\v9_AgenceJaneSuperbevillaprsplagesauCapFerret.mp4" type="video/mp4"></video>
+          <h1 class="texte">Superbe villa au Cap Ferret. Accès au Bassin en moins de 5 minutes à pied<br/>
+            Surface intérieur : 160m². Surface extérieur : 60m².</h1>
+            <a href="">Voir plus</a>
+    </ng-template>
 
-<ng-template carouselSlide><video style="height: 40vw; " id="bgvid" autoplay="autoplay" preload="metadata"
-  loop="loop" muted="" class="playing">
-  <source src="\assets\v10_AgenceJaneSuperbepropritviticoleTizacdeCurton.mp4" type="video/mp4"></video>
-</ng-template>
+    <ng-template carouselSlide><video style="height: 40vw; " id="bgvid" autoplay="autoplay" preload="metadata"
+        loop="loop" muted="" class="playing">
+        <source src="\assets\v10_AgenceJaneSuperbepropritviticoleTizacdeCurton.mp4" type="video/mp4"></video>
+          <h1 class="texte">Bien viticole à Tizac de Curton. <br/>
+            Surface intérieur : 286m² sur 2 étages. Surface extérieur :158ha.</h1>
+            <a href="">Voir plus</a>
+    </ng-template>
 
-<ng-template carouselSlide><video style="height: 40vw; " id="bgvid" autoplay="autoplay" preload="metadata"
-  loop="loop" muted="" class="playing">
-  <source src="\assets\v11_AgenceJaneSomptueusepropritenvilledhiver.mp4" type="video/mp4"></video>
-</ng-template>
+    <ng-template carouselSlide><video style="height: 40vw; " id="bgvid" autoplay="autoplay" preload="metadata"
+        loop="loop" muted="" class="playing">
+        <source src="\assets\v11_AgenceJaneSomptueusepropritenvilledhiver.mp4" type="video/mp4"></video>
+          <h1 class="texte">Propriété magnifique au Cap Ferret.<br/>
+            Surface intérieur : 410m² sur 3 étages. Surface extérieur : 35m².</h1>
+            <a href="">Voir plus</a>
+    </ng-template>
 
-<ng-template carouselSlide><video style="height: 40vw; " id="bgvid" autoplay="autoplay" preload="metadata"
-  loop="loop" muted="" class="playing">
-  <source src="\assets\v12_AgenceJanePropritfrontdemerPylasurMer.mp4" type="video/mp4"></video>
-</ng-template>
+    <ng-template carouselSlide><video style="height: 40vw; " id="bgvid" autoplay="autoplay" preload="metadata"
+        loop="loop" muted="" class="playing">
+        <source src="\assets\v12_AgenceJanePropritfrontdemerPylasurMer.mp4" type="video/mp4"></video>
+          <h1 class="texte">Supperbe villa en front de mer. Accès privatif au Bassin d'Arcachon<br/>
+            Surface intérieur : 219m² sur 2 étages. Surface extérieur : 82m².</h1>
+            <a href="">Voir plus</a>
+    </ng-template>
   </owl-carousel-o>
 </div>
-
-
