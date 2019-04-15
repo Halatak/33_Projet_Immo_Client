@@ -25,6 +25,7 @@ import { AccueilClasseStandardComponent } from './accueil-classe-standard/accuei
 import { AccueilConseillerComponent } from './accueil-conseiller/accueil-conseiller.component';
 import { AjoutClientComponent } from './ajout-client/ajout-client.component';
 import { AjoutClasseStandardComponent } from './ajout-classe-standard/ajout-classe-standard.component';
+import { ResaVisiteComponent } from './resa-visite/resa-visite.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { AjoutClasseStandardComponent } from './ajout-classe-standard/ajout-clas
     AccueilClasseStandardComponent,
     AccueilConseillerComponent,
     AjoutClientComponent,
-    AjoutClasseStandardComponent
+    AjoutClasseStandardComponent,
+    ResaVisiteComponent
   ],
   imports: [
     BrowserModule,
