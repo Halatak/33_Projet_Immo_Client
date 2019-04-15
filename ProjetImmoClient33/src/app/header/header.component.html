@@ -45,8 +45,55 @@
       </ul>
     </div>
 
-    <li role="presentation"><a [routerLink]="['/accConseiller']"
-        routerLinkActive="btn-danger">
+    <div class="btn-group" dropdown>
+      <button dropdownToggle class="dropdown-toggle">
+        <p class="texte">
+          Contrat <span class="caret"></span></p>
+      </button>
+      <ul *dropdownMenu class="dropdown-menu" role="menu">
+        <li role="menuitem"><a class="dropdown-item">Ajouter</a></li>
+        <li role="menuitem"><a class="dropdown-item">Modifier</a></li>
+        <li role="menuitem"><a class="dropdown-item">Liste</a></li>
+      </ul>
+    </div>
+
+    <div class="btn-group" dropdown>
+      <button dropdownToggle class="dropdown-toggle">
+        <p class="texte">
+          Visite <span class="caret"></span></p>
+      </button>
+      <ul *dropdownMenu class="dropdown-menu" role="menu">
+        <li role="menuitem"><a class="dropdown-item">Ajouter</a></li>
+        <li role="menuitem"><a class="dropdown-item">Modifier</a></li>
+        <li role="menuitem"><a class="dropdown-item">Liste</a></li>
+      </ul>
+    </div>
+
+    <div class="btn-group" dropdown>
+        <button dropdownToggle class="dropdown-toggle">
+          <p class="texte">
+            Propriétaires <span class="caret"></span></p>
+        </button>
+        <ul *dropdownMenu class="dropdown-menu" role="menu">
+          <li role="menuitem"><a class="dropdown-item">Ajouter</a></li>
+          <li role="menuitem"><a class="dropdown-item">Modifier</a></li>
+          <li role="menuitem"><a class="dropdown-item">Liste</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group" dropdown>
+          <button dropdownToggle class="dropdown-toggle">
+            <p class="texte">
+              Classe Standard <span class="caret"></span></p>
+          </button>
+          <ul *dropdownMenu class="dropdown-menu" role="menu">
+            <li role="menuitem"><a class="dropdown-item">Ajouter</a></li>
+            <li role="menuitem"><a class="dropdown-item">Modifier</a></li>
+            <li role="menuitem"><a class="dropdown-item">Liste</a></li>
+          </ul>
+        </div>
+
+    <li role="presentation"><a [routerLink]="['/accConseiller']" routerLinkActive="btn-danger">
         <p class="texte">Mon espace</p>
       </a></li>
 
