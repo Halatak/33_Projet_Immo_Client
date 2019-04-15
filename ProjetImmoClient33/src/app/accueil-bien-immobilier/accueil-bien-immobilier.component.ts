@@ -9,7 +9,7 @@ import { BienImmobilierService } from '../service/bien-immobilier.service';
 export class AccueilBienImmobilierComponent implements OnInit {
 
     // Déclarer des attributs du composants
-    listeBienImmo: any; 
+    listeBienImmo: any;
 
   constructor(private bService: BienImmobilierService) { }
 

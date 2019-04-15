@@ -22,9 +22,9 @@ export class AccueilClasseStandardComponent implements OnInit {
     );
   }
 
-  public deleteLien(idb:number){
+  public deleteLien(idb: number) {
     this.clService.supprClasseStandard(idb).subscribe((result) => {
-      this.listeClasseStandard = this.listeClasseStandard.filter(b => b.id != idb);
+      this.listeClasseStandard = this.listeClasseStandard.filter(b => b.id !== idb);
     });
   }
 

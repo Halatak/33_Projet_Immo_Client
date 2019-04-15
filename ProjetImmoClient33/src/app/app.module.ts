@@ -21,6 +21,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AccueilComponent } from './accueil/accueil.component';
 import { AccueilClasseStandardComponent } from './accueil-classe-standard/accueil-classe-standard.component';
+import { AccueilConseillerComponent } from './accueil-conseiller/accueil-conseiller.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { AccueilClasseStandardComponent } from './accueil-classe-standard/accuei
     AccueilBienImmobilierComponent,
     RechercheBienImmobilierComponent,
     AccueilComponent,
-    AccueilClasseStandardComponent
+    AccueilClasseStandardComponent,
+    AccueilConseillerComponent
   ],
   imports: [
     BrowserModule,
