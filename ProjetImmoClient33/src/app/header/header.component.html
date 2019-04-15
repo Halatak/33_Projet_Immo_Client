@@ -23,9 +23,11 @@
       <ul *dropdownMenu class="dropdown-menu" role="menu">
         <li role="menuitem"><a class="dropdown-item" [routerLink]="['/addAchat']" routerLinkActive="btn-success">Ajouter
             un bien pour achat</a></li>
-        <li role="menuitem"><a class="dropdown-item">Ajouter un bien pour location</a></li>
-        <li role="menuitem"><a class="dropdown-item">Modifier un bien pour achat</a></li>
-        <li role="menuitem"><a class="dropdown-item">Modifier un bien pour location</a></li>
+        <li role="menuitem"><a class="dropdown-item" [routerLink]="['/addLocation']" routerLinkActive="btn-success">Ajouter
+          un bien pour location</a></li>
+        <li role="menuitem"><a class="dropdown-item" [routerLink]="['/updateAchat']" routerLinkActive="btn-success">Modifier
+          un bien pour achat</a></li>
+        <li role="menuitem"><a class="dropdown-item" [routerLink]="['/updateLocation']" routerLinkActive="btn-success">Modifier un bien pour location</a></li>
         <li role="menuitem"><a class="dropdown-item" [routerLink]="['/accBienImmo']"
             routerLinkActive="btn-success">Liste des Biens</a></li>
       </ul>
