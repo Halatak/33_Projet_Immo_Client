@@ -1,0 +1,33 @@
+<h1 style="color:mediumturquoise; text-align:center">Liste des biens immo</h1>
+
+<div class="col-md-2"></div>
+<div class="col-md-8">
+  <table class="table table-bordered table-hover">
+    <tr>
+      <th>ID</th>
+      <th>Statut</th>
+      <th>Date de soumission</th>
+      <th>Date de mise à disposition</th>
+      <th>Nombre de chambres</th>
+      <th>Revenu cadastral (&#8364;)</th>
+      <th>Prix (&#8364;)</th>
+      <th>Caution (&#8364;)</th>
+      <th>Loyer mensuel (&#8364;)</th>
+      <th>Liste des clients</th>
+      <th>Addresse</th>
+    </tr>
+    <tr *ngFor="let b of listeBienImmo">
+      <td>{{b.id}}</td>
+      <td>{{b.statut}}</td>
+      <td>{{b.dateSoumission}}</td>
+      <td>{{b.dateDispo}}</td>
+      <td>{{b.nombreChambres}}</td>
+      <td>{{b.revenu}}</td>
+      <td>{{b.prix}}</td>
+      <td>{{b.caution}}</td>
+      <td>{{b.loyerMensuel}}</td>
+      <td>{{b.clients}}</td>
+      <td>{{b.adresse.numero}} {{b.adresse.rue}} {{b.adresse.codePostal}} {{b.adresse.ville}}</td>
+    </tr>
+  </table>
+</div>

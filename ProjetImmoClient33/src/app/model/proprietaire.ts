@@ -1,24 +1,21 @@
 import { Adresse } from './adresse';
 import { Contrat } from './contrat';
-import { ClasseStandard } from './classe-standard';
 import { BienImmobilier } from './bien-immobilier';
-import { Visite } from './visite';
 
-export class Client {
+export class Proprietaire {
 
   // Attributs de la classe
   private _id: number;
   private _nom: string;
   private _mail: string;
   private _mdp: string;
-  private _telephone: string;
+  private _telephonePro: string;
+  private _telephonePrive: string;
 
   // Associations
   private _adresse: Adresse;
   private _contrat: Contrat[];
-  private _classeStandard: ClasseStandard[];
   private _bienImmobilier: BienImmobilier[];
-  private _visite: Visite[];
 
   // constructeur
   constructor() {}
@@ -52,11 +49,11 @@ export class Client {
     this._mdp = newMdp;
   }
 
-  get telephone(): string {
-    return this._telephone;
+  get telephonePro(): string {
+    return this._telephonePro;
   }
-  set telephone(newTelephone: string) {
-    this._telephone = newTelephone;
+  set telephonePro(newTelephonePro: string) {
+    this._telephonePro = newTelephonePro;
   }
 
   get adresse(): Adresse {
@@ -73,24 +70,10 @@ export class Client {
     this._contrat = newContrat;
   }
 
-  get classeStandard(): ClasseStandard[] {
-    return this._classeStandard;
-  }
-  set classeStandard(newClasseStandard: ClasseStandard[]) {
-    this._classeStandard = newClasseStandard;
-  }
-
   get bienImmobilier(): BienImmobilier[] {
     return this._bienImmobilier;
   }
   set bienImmobilier(newBienImmobilier: BienImmobilier[]) {
     this._bienImmobilier = newBienImmobilier;
-  }
-
-  get visite(): Visite[] {
-    return this._visite;
-  }
-  set visite(newVisite: Visite[]) {
-    this._visite = newVisite;
   }
 }
