@@ -4,48 +4,52 @@
 
 <form (submit)='ajoutBienAchat()' class="form-horizontal">
   <div class="form-group">
-     <label for="idRevenu" class="col-sm-2 control-label">Revenu</label>
-     <div class="col-sm-5">
-        <input type="number" class="form-control" id="idRevenu" placeholder="Revenu" name="fRevenu" [(ngModel)]="baAjout.revenu">
-     </div>
+    <label for="idRevenu" class="col-sm-2 control-label">Revenu</label>
+    <div class="col-sm-5">
+      <input type="number" class="form-control" id="idRevenu" placeholder="Revenu" name="fRevenu"
+        [(ngModel)]="baAjout.revenu">
+    </div>
   </div>
 
   <div class="form-group">
-     <label for="idNombreChambres" class="col-sm-2 control-label">nombreChambres</label>
-     <div class="col-sm-5">
-        <input type="number" class="form-control" id="idNombreChambres" placeholder="NombreChambres" name="fNombreChambres" [(ngModel)]="baAjout.nombreChambres">
-     </div>
+    <label for="idNombreChambres" class="col-sm-2 control-label">nombreChambres</label>
+    <div class="col-sm-5">
+      <input type="number" class="form-control" id="idNombreChambres" placeholder="NombreChambres"
+        name="fNombreChambres" [(ngModel)]="baAjout.nombreChambres">
+    </div>
+  </div>
+
+
+  <div class="form-group">
+    <label for="idPrix" class="col-sm-2 control-label">Prix</label>
+    <div class="col-sm-5">
+      <input type="number" class="form-control" id="idPrix" placeholder="Prix" name="fPrix" [(ngModel)]="baAjout.prix">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="idNumero" class="col-sm-2 control-label">Numero</label>
+    <div class="col-sm-5">
+      <input type="number" class="form-control" id="idNumero" placeholder="Numero" name="fNumero"
+        [(ngModel)]="adresse.numero">
+    </div>
   </div>
 
  <div class="form-group">
-  <label for="idNumero" class="col-sm-2 control-label">Numero</label>
-  <div class="col-sm-5">
-     <input type="number" class="form-control" id="idNumero" placeholder="Numero" name="fNumero" [(ngModel)]="baAjout.adresse.numero">
+    <label for="idCodePostal" class="col-sm-2 control-label">CodePostal</label>
+    <div class="col-sm-5">
+      <input type="number" class="form-control" id="idCodePostal" placeholder="CodePostal" name="fCodePostal"
+        [(ngModel)]="adresse.codePostal">
+    </div>
   </div>
-</div>
 
-<div class="form-group">
-  <label for="idPrix" class="col-sm-2 control-label">Prix</label>
-  <div class="col-sm-5">
-     <input type="number" class="form-control" id="idPrix" placeholder="Prix" name="fPrix" [(ngModel)]="baAjout.prix">
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Ajouter</button>
+    </div>
   </div>
-</div>
-
-
-<div class="form-group">
-  <label for="idCodePostal" class="col-sm-2 control-label">CodePostal</label>
-  <div class="col-sm-5">
-     <input type="number" class="form-control" id="idCodePostal" placeholder="CodePostal" name="fCodePostal" [(ngModel)]="baAjout.adresse.codePostal">
-  </div>
-</div>
-
- <div class="form-group">
-   <div class="col-sm-offset-2 col-sm-10">
-     <button type="submit" class="btn btn-default">Ajouter</button>
-   </div>
- </div>
 </form>
 
 <h1 style="color:mediumturquoise; text-align: center" *ngIf="indice">
-    L'ajout a échoué
-  </h1>
+  L'ajout a échoué
+</h1>

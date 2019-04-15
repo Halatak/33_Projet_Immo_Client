@@ -8,29 +8,29 @@ import { Photo } from './photo';
 export class BienImmobilier {
 
   // Attributs de la classe mère
-  public _id: number;
-  public _statut: string;
-  public _dateSoumission: Date;
-  public _dateDispo: Date;
-  public _revenu: number;
-  public _coordonneePersAgence: string;
-  public _nombreChambres: number;
-  public _latitude: string;
-  public _longitude: string;
+  public id: number;
+  public statut: string;
+  public dateSoumission: Date;
+  public dateDispo: Date;
+  public revenu: number;
+  public coordonneePersAgence: string;
+  public nombreChambres: number;
+  public latitude: string;
+  public longitude: string;
 
   // Associations
-  public _adresse: Adresse;
-  public _classeStandard: ClasseStandard;
-  public _proprietaire: Proprietaire;
-  public _client: Client[];
-  public _visite: Visite;
-  public _photo: Photo[];
+  public adresse: Adresse;
+  public classeStandard: ClasseStandard;
+  public proprietaire: Proprietaire;
+  public client: Client[];
+  public visite: Visite;
+  public photo: Photo[];
 
   // Constructeur
   constructor() {}
 
   // getter et setter
-  get id(): number {
+  /*get id(): number {
     return this._id;
   }
   set id(newId: number) {
@@ -133,5 +133,5 @@ export class BienImmobilier {
   }
   set photo(newPhoto: Photo[]) {
     this._photo = newPhoto;
-  }
+  }*/
 }
