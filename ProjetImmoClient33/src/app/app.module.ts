@@ -23,6 +23,7 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { AccueilClasseStandardComponent } from './accueil-classe-standard/accueil-classe-standard.component';
 import { AccueilConseillerComponent } from './accueil-conseiller/accueil-conseiller.component';
 import { AjoutClientComponent } from './ajout-client/ajout-client.component';
+import { AjoutClasseStandardComponent } from './ajout-classe-standard/ajout-classe-standard.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { AjoutClientComponent } from './ajout-client/ajout-client.component';
     AccueilComponent,
     AccueilClasseStandardComponent,
     AccueilConseillerComponent,
-    AjoutClientComponent
+    AjoutClientComponent,
+    AjoutClasseStandardComponent
   ],
   imports: [
     BrowserModule,
