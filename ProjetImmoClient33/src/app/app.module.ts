@@ -20,6 +20,7 @@ import { RechercheBienImmobilierComponent } from './recherche-bien-immobilier/re
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AccueilComponent } from './accueil/accueil.component';
+import { AccueilClasseStandardComponent } from './accueil-classe-standard/accueil-classe-standard.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { AccueilComponent } from './accueil/accueil.component';
     SupprBienComponent,
     AccueilBienImmobilierComponent,
     RechercheBienImmobilierComponent,
-    AccueilComponent
+    AccueilComponent,
+    AccueilClasseStandardComponent
   ],
   imports: [
     BrowserModule,

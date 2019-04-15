@@ -20,7 +20,7 @@ export class ClasseStandardService {
   /* ******************** */
 
   // Get all
-  public getAllClasse() {
+  public getAllClasseStandard() {
     return this.http.get(`${this.url}liste`);
   }
 
