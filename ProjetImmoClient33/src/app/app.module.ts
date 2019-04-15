@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { Routes, RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BsDropdownModule } from 'ngx-bootstrap';
 
 
 
@@ -48,10 +49,10 @@ import { AjoutClientComponent } from './ajout-client/ajout-client.component';
     CarouselModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    FormsModule, 
+    FormsModule,
     ReactiveFormsModule,
-     RouterModule.forRoot([])
-     
+    RouterModule.forRoot([]),
+    BsDropdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
