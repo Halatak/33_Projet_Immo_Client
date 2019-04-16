@@ -1,0 +1,16 @@
+<app-header></app-header>
+<div class="col-md-2"></div>
+<div class="row col-md-8">
+  <div class="col-sm-6 col-md-4"  *ngFor="let b of listeBienAchat">
+    <div class="thumbnail">
+      <img src="..." alt="...">
+      <div class="caption">
+        <h3>{{b.classeStandard.typeBien | titlecase}} T{{b.nombreChambres +1}} à acheter à {{b.adresse.ville | titlecase}}</h3>
+        <p style="text-align:justify">Splendide {{b.classeStandard.typeBien}}, de {{b.nombreChambres}} chambres, en plein coeur de {{b.adresse.ville}} disponible à partir du {{b.dateDispo | date:'dd/MM/yy'}}
+          pour seulement {{b.prix | currency:'EUR'}}.</p>
+        <p><a  [routerLink]="['/details', {pId:b.id}]" class="btn btn-primary" role="button">Voir plus d'infos</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-2"></div>

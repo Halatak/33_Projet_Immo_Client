@@ -19,6 +19,18 @@ export class BienImmobilierService {
     return this.http.get(`${this.url}liste`);
   }
 
+  
+  // La methode pour récupérer la liste Location
+  public getAllLocation() {
+    return this.http.get(`${this.url}listeLocation`);
+  }
+
+  
+  // La methode pour récupérer la liste Achat
+  public getAllAchat() {
+    return this.http.get(`${this.url}listeAchat`);
+  }
+
   // La methode pour get by Id
   public getById(id: number): Observable<BienImmobilier> {
     return this.http.get<BienImmobilier>(`${this.url}recherche?pId=${id}`);

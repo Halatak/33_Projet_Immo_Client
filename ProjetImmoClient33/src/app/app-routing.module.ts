@@ -11,6 +11,8 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { AccueilConseillerComponent } from './accueil-conseiller/accueil-conseiller.component';
 import { AjoutClientComponent } from './ajout-client/ajout-client.component';
 import { AccueilLocationComponent } from './accueil-location/accueil-location.component';
+import { AccueilAchatComponent } from './accueil-achat/accueil-achat.component';
+import { DetailsBienComponent } from './details-bien/details-bien.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -25,6 +27,8 @@ const routes: Routes = [
   { path: 'findBienImmo', component: RechercheBienImmobilierComponent },
   { path: 'addClient', component: AjoutClientComponent },
   { path: 'accLocation', component: AccueilLocationComponent },
+  { path: 'accAchat', component: AccueilAchatComponent},
+  { path: 'details', component: DetailsBienComponent},
 
   { path: '**', redirectTo: 'home', pathMatch: 'full' }];
 
