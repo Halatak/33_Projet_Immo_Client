@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BienImmobilierService } from '../service/bien-immobilier.service';
 
 @Component({
   selector: 'app-accueil-location',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccueilLocationComponent implements OnInit {
 
-  constructor() { }
+   // Déclarer des attributs du composants
+   listeBienLocation: any;
+
+
+  constructor(private bService: BienImmobilierService) { }
 
   ngOnInit() {
+    this.bService.getAllLocation().subscribe((data) => {
+      this.listeBienLocation = data;
+    },
+      (erreur) => {
+        console.log(erreur);
+      }
+      );
   }
 
 }
+ 
