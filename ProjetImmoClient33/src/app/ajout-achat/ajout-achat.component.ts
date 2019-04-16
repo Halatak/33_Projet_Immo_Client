@@ -47,6 +47,10 @@ export class AjoutAchatComponent implements OnInit {
       // this.baAjout.photo.push(this.photo2);
       //  this.baAjout.photo.push(this.photo3);
       this.baAjout.adresse = this.adresse;
+      this.listePhoto.push(this.photo);
+      console.log("La liste est " + this.listePhoto.length);
+      this.baAjout.photo = this.listePhoto;
+      console.log("La photo de baAjout est:" + this.baAjout);
       //this.baAjout.photo.prot(this.test);
       console.log(this.baAjout.photo);
       this.bService.ajoutBienAchat(this.baAjout).subscribe((resultat) => {
@@ -78,10 +82,10 @@ export class AjoutAchatComponent implements OnInit {
       reader.onload = () => {
         this.photo.photo = this.b64EncodeUnicode(reader.result.toString());
         console.log(this.photo);
-        this.listePhoto.push(this.photo);
-        console.log("La liste est "+this.listePhoto);
-        this.baAjout.photo = this.listePhoto;
-        console.log("La photo de baAjout est:" +this.baAjout.photo);
+        // this.listePhoto.push(this.photo);
+        // console.log("La liste est " + this.listePhoto.length);
+        // this.baAjout.photo = this.listePhoto;
+        // console.log("La photo de baAjout est:" + this.baAjout);
       };
       //this.monForm.get('photo2').setValue(file);
       //  this.monForm.get('photo3').setValue(file);
