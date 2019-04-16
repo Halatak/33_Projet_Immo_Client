@@ -8,7 +8,7 @@
         <h3>{{b.classeStandard.typeBien | titlecase}} T{{b.nombreChambres +1}} à louer à {{b.adresse.ville | titlecase}}</h3>
         <p style="text-align:justify">Magnifique {{b.classeStandard.typeBien}}, de {{b.nombreChambres}} chambres, en plein coeur de {{b.adresse.ville}} disponible à partir du {{b.dateDispo | date:'dd/MM/yy'}}
           pour seulement {{b.loyerMensuel | currency:'EUR'}} par mois.</p>
-        <p><a  [routerLink]="['/modif', {pId:b.id}]" class="btn btn-primary" role="button">Voir plus d'infos</a></p>
+        <p><a  [routerLink]="['/details', {pId:b.id}]" class="btn btn-primary" role="button">Voir plus d'infos</a></p>
       </div>
     </div>
   </div>
