@@ -28,6 +28,8 @@ import { AjoutClasseStandardComponent } from './ajout-classe-standard/ajout-clas
 import { ResaVisiteComponent } from './resa-visite/resa-visite.component';
 import { AccueilLocationComponent } from './accueil-location/accueil-location.component';
 import { HeaderConseillerComponent } from './header-conseiller/header-conseiller.component';
+import { AccueilAchatComponent } from './accueil-achat/accueil-achat.component';
+import { DetailsBienComponent } from './details-bien/details-bien.component';
 
 
 @NgModule({
@@ -50,6 +52,8 @@ import { HeaderConseillerComponent } from './header-conseiller/header-conseiller
     ResaVisiteComponent,
     AccueilLocationComponent,
     HeaderConseillerComponent,
+    AccueilAchatComponent,
+    DetailsBienComponent,
   ],
   imports: [
     BrowserModule,
